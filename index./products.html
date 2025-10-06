@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="lv">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BeautyFind — Produkti</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="logo">BeautyFind</div>
+      <nav class="main-nav">
+        <a href="index.html">Sākums</a>
+        <a href="products.html">Produkti</a>
+        <a href="favorites.html">Favorīti</a>
+        <a href="about.html">Par mums</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container page-products">
+    <h1>Atrodi produktu — ievadi prasības</h1>
+
+    <form id="productForm" class="product-form">
+      <label>Nosaukums / tips
+        <input name="q" placeholder="piem., mitrinošs tonālais, ilgnoturīga lūpu krāsa" />
+      </label>
+
+      <label>Ādas tips
+        <select name="skin">
+          <option value="all">Jebkurš</option>
+          <option value="sausai">Sausa</option>
+          <option value="taukainai">Taukaina</option>
+          <option value="jaukti">Jaukti</option>
+        </select>
+      </label>
+
+      <label>Cena
+        <select name="price">
+          <option value="any">Jebkura</option>
+          <option value="low">Lēts (&lt;10€)</option>
+          <option value="mid">Vidējs (10€–30€)</option>
+          <option value="high">Dārgāks (&gt;30€)</option>
+        </select>
+      </label>
+
+      <label>Īpašības
+        <div class="checkbox-row">
+          <label><input type="checkbox" name="feat" value="long"> Ilgnoturība</label>
+          <label><input type="checkbox" name="feat" value="vegan"> Vegan</label>
+          <label><input type="checkbox" name="feat" value="sensitive"> Maigai ādai</label>
+        </div>
+      </label>
+
+      <div class="form-actions">
+        <button type="submit">Meklēt</button>
+        <button type="button" id="resetBtn">Notīrīt</button>
+      </div>
+    </form>
+
+    <section id="results" class="results">
+      <!-- Rezultāti tiks ielādēti šeit -->
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>Pamatinformācija</div>
+      <div><a href="contact.html">Kontakti</a></div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
