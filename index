@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="lv">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BeautyFind — Sākums</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="logo">BeautyFind</div>
+      <nav class="main-nav">
+        <a href="index.html">Sākums</a>
+        <a href="products.html">Produkti</a>
+        <a href="favorites.html">Favorīti</a>
+        <a href="about.html">Par mums</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="hero">
+    <div class="search-box container">
+      <input id="searchInput" placeholder="Ievadiet produktu vai nosaukumu..." />
+      <button id="searchBtn">Meklēt</button>
+    </div>
+
+    <div class="quick-links container">
+      <a class="quick" href="#" data-type="Lūpu krāsas">Lūpu krāsas</a>
+      <a class="quick" href="#" data-type="Tonālie krēmi">Tonālie krēmi</a>
+      <a class="quick" href="#" data-type="Skropstu tušas">Skropstu tušas</a>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>Pamatinformācija</div>
+      <div><a href="contact.html">Kontakti</a></div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
